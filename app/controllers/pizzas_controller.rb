@@ -1,6 +1,11 @@
 class PizzasController < ApplicationController
   before_action :set_pizza, only: [:show, :edit, :update, :destroy]
 
+def about
+end
+
+
+
 def home 
 end
   # GET /pizzas
@@ -16,7 +21,7 @@ end
 
   # GET /pizzas/new
   def new
-    @pizza = Pizza.new
+    @pizza = Pizza.new(pizza_params)
   end
 
   # GET /pizzas/1/edit

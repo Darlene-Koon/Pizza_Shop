@@ -2,8 +2,12 @@ Rails.application.routes.draw do
   resources :pizzas
   #Resource defines all of your HTTP requests.
 
+  get '/about' => 'pizzas#about'
+  '
+
 
 root 'pizzas#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
